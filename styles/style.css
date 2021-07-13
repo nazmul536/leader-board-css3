@@ -7,6 +7,85 @@ body {
     background-color: #F3F1FF;
 }
 
+/*Start Common Header and utilities */
+.Idea {
+    width: 100%;
+    height: 94px;
+    background-color: #562EFF;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20%;
+
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+
+}
+
+.logo {
+    margin-right: 16px;
+    padding-bottom: 9px;
+
+}
+
+.logo img {
+    width: 40.42px;
+    height: 51px;
+    padding-bottom: 9px;
+}
+
+img {
+    width: 100%;
+}
+
+.idea {
+    font-size: 24px;
+    color: #FFFFFF;
+    padding-right: 16px;
+    padding-bottom: 15px;
+
+}
+
+.Home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+
+}
+
+a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 400;
+    margin-right: 36px;
+    color: #FFFFFF;
+    padding-bottom: 22px;
+
+}
+
+.profile {
+    padding-bottom: 15px;
+
+}
+
+.profile img {
+    width: 51px;
+    height: 51px
+}
+
+img {
+    width: 100%;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -25,6 +104,8 @@ hr {
     border: 1px solid #D1D1D1;
     margin-bottom: 27px;
 }
+
+/*End Common Header and utilities */
 
 /* Top player style */
 .top-players {
@@ -58,6 +139,8 @@ hr {
     margin-left: 16px;
     font-size: 18px;
 }
+
+/* End player style */
 
 /*----------- Top Blog Style ---------------*/
 .blogs {
@@ -129,6 +212,30 @@ hr {
 
 /* Mobile Devices */
 @media only screen and (max-width:668px) {
+    nav {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr)100px;
+    }
+
+    .logo-box {
+        margin-right: 80%;
+    }
+
+    nav .Home {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) 100px;
+    }
+
+    a {
+        font-size: 8px;
+    }
+
+    .profile img {
+        padding-bottom: 15px;
+        width: 30%;
+        height: 30%;
+    }
+
     .container {
         width: 100%;
     }
@@ -148,12 +255,14 @@ hr {
 
 /* Tablet Devices */
 @media only screen and (min-width:668px) and (max-width:992px) {
+
     .container {
         width: 100%;
     }
 
     .players,
-    .courses {
+    .courses,
+        {
         grid-template-columns: repeat(2, 1fr);
     }
 
